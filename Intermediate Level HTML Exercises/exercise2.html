@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="/submit" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name"><br><br>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
+<nav>
+  <a href="exercise1.html">Home</a>
+  <a href="about.html">About</a>
+</nav>
 
-  <label for="subject">Subject:</label>
-  <input type="text" id="subject" name="subject"><br><br>
+<main>
+  <h1>Contact Us</h1>
 
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+  <form action="/submit" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
 
-  <button type="submit">Send</button>
-</form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <button type="submit">Send</button>
+  </form>
+</main>
+
+
+
 </body>
 </html>
