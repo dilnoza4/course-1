@@ -3,39 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form with Fieldset and Legend</title>
+  <title>Minions Card Component</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<form>
-  <fieldset>
-    <legend>Personal Information</legend>
+<h1>Minions Card Component</h1>
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" required>
-  </fieldset>
-
-  <fieldset>
-    <legend>Minions Preference</legend>
-
-    <label for="minions">Choose your favorite Minion:</label>
-    <select id="minions" name="minions">
-      <option value="kevin">Kevin</option>
-      <option value="stuart">Stuart</option>
-      <option value="bob">Bob</option>
-      <option value="dave">Dave</option>
-    </select>
-  </fieldset>
-
-  <br>
-  <input type="submit" value="Submit">
-</form>
+<div class="card">
+  <img src="../img/image3.jpg" alt="Minions" class="card-image">
+  <h2>Meet the Minions!</h2>
+  <p>Minions are small, yellow, cylindrical creatures, who have one or two eyes. They are known for their childlike behavior and their love for bananas! Minions have been around since the beginning of time, evolving from single-celled organisms into the beings we know and love today.</p>
+</div>
 
 </body>
 </html>

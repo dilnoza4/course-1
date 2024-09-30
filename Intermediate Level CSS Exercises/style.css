@@ -1,0 +1,564 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2em; /* Adjust the size of h1 */
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.5em; /* Adjust the size of h2 */
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.2em; /* Adjust the size of h3 */
+}
+
+
+/* 1. Responsive Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-item {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+/* 2. Style a Form */
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.form-container input,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-container button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.form-container button:hover {
+    background-color: #2980b9;
+}
+
+/* 3. Flexbox Layout */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3498db;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #2980b9;
+}
+
+/* 4. CSS Variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+.secondary {
+    color: var(--secondary-color);
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+h1 {
+    color: #2c3e50; /* Darker color for the header */
+    font-size: 2em; /* Adjusted header size */
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #3498db; /* Blue color for the tooltip trigger */
+    text-decoration: underline; /* Underline for emphasis */
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the tooltip trigger */
+    left: 50%;
+    margin-left: -100px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+h1 {
+    color: #2c3e50; /* Darker color for the header */
+    font-size: 2em; /* Adjusted header size */
+}
+
+/* Table styles */
+.table-striped {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-striped th, .table-striped td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #bdc3c7;
+}
+
+.table-striped tr:nth-child(even) {
+    background-color: #ecf0f1; /* Light grey for even rows */
+}
+
+.table-striped tr:nth-child(odd) {
+    background-color: #bdc3c7; /* Darker grey for odd rows */
+}
+
+.table-striped th {
+    background-color: #3498db; /* Header background color */
+    color: white; /* Header text color */
+}
+
+
+/* Global styles for card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    color: #ffcd00; /* Minions yellow */
+    margin-top: 10px;
+}
+
+.card p {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 8. Responsive Image Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* 9.  Animated Button */
+.animated-button {
+    background-color: #ffeb3b; /* Minion yellow */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.minion-button:hover {
+    background-color: #fdd835; /* Darker yellow on hover */
+    transform: scale(1.1);
+    color: #2c3e50; /* Change text color */
+}
+
+
+/* Sticky Sidebar */
+.sidebar {
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    background-color: #ffe135; /* Minion Yellow */
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    padding-left: 20px;
+    max-width: 600px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+    width: 80%;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 50%; /* Change this to simulate progress */
+    height: 30px;
+    background-color: #3498db;
+    transition: width 1s ease;
+}
+
+/* 17. CSS Mask */
+.masked-image {
+    mask-image: url('mask.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.animation-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+.animated-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #f1c40f;
+    border-radius: 10px;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 50px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+
+/* 19. Responsive Typography */
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* 20. CSS Gradients */
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Custom Checkbox */
+.custom-checkbox {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.custom-checkbox:hover {
+    color: #3498db; /* Change text color on hover */
+}
+
+.custom-checkbox input {
+    display: none; /* Hide the default checkbox */
+}
+
+.checkmark {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 10px; /* Space between checkbox and text */
+}
+
+/* Checkbox hover effect */
+.custom-checkbox:hover .checkmark {
+    background-color: #d5d5d5; /* Darken background on hover */
+}
+
+/* Change color when checked */
+.custom-checkbox input:checked + .checkmark {
+    background-color: #3498db; /* Checked background color */
+    border-color: #2980b9; /* Checked border color */
+}
+
+/* Checkmark */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    left: 9px; /* Adjusted for better positioning */
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
